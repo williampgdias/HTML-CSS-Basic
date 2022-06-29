@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+}
+
+.box {
+  background: #e7e7e7;
+  max-width: 600px;
+  border-radius: 4px;
+  padding: 20px;
+}
