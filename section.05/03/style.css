@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bike {
+  display: flex;
+  height: 800px;
+  background-color: lightblue;
+  background-image: url('./img/bicicleta.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+h1 {
+  margin: auto;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
