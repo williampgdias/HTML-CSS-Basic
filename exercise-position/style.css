@@ -1,41 +1,116 @@
-/*
-
-  # CORES
-
-  cinza: #f7f7f7
-  cinza-escuro: #ee2211
-
-  # Tipografia
-
-  fonte: Arial
-  parágrafos: 20px
-  vantagas bikcraft: 64px
-  
-  # Tamanhos
-  
-  conteúdo pincipal: máximo 1000px
-
-  */
+/******************** GENERAL STYLES ********************/
 
 body {
-  
+  margin: 0;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
 }
 
 p {
   font-size: 20px;
+  line-height: 1.3;
 }
 
-/* HEADER */
+/******************** MENU ********************/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
-/* MENU */
+.menu a {
+  background: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #000;
+  text-transform: uppercase;
+}
 
-/* CONTENT */
+/******************** CONTENT ********************/
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
 
-/* BIKE-INFO */
+.intro {
+  display: grid;
+  align-content: center;
+  justify-items: end;
+  gap: 20px;
+  padding: 40px;
+  background: #fff;
+  text-align: right;
+  position: relative;
+}
 
-/* IMAGE */
+.detail {
+  width: 60px;
+  height: 4px;
+  background: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
 
-/* BENEFITS */
+.button {
+  background: #e21;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
 
-/* FOTTER */
+.sub-title {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px;
+  align-self: center;
+}
 
+.benefits {
+  background: #fff;
+  padding: 40px;
+}
+
+.benefits-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+
+.benefits-item p {
+  grid-column: 2;
+}
+
+/******************** FOOTER ********************/
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
