@@ -1,0 +1,28 @@
+body {
+  font-size: 2rem;
+}
+
+h2 {
+  border-bottom: 8px solid blue;
+}
+
+.title {
+  color: tomato;
+  padding: 10px;
+}
+
+#products {
+  color: lightgreen;
+}
+
+html body section h2 {
+  border-left: 8px solid lightgreen;
+}
+
+body section#intro h2 {
+  border-left: 8px solid blue;
+}
+
+h2 {
+  color: #000 !important;
+}
