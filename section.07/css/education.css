@@ -5,15 +5,28 @@
 
 .education-container {
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 120px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  position: relative;
+}
+
+.education-container::after {
+  display: block;
+  content: '';
+  width: 130px;
+  height: 130px;
+  background: url('../img/detalhe.svg') no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
 }
 
 .education .subtitle {
   color: #000;
+  max-width: 5ch;
 }
 
 .education-text {
@@ -89,19 +102,52 @@
 
 .education-extra h3::before {
   display: block;
-  content: "";
+  content: '';
   width: 24px;
   height: 24px;
-  
+
   position: absolute;
   left: -36px;
   top: -4px;
 }
 
 .courses h3::before {
-  background: url("../img/cursos.svg") no-repeat center center;
+  background: url('../img/cursos.svg') no-repeat center;
 }
 
 .languages h3::before {
-  background: url("../img/idiomas.svg") no-repeat center center;
+  background: url('../img/idiomas.svg') no-repeat center;
+}
+
+.education-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.education-extra span {
+  color: #8f8f8f;
+}
+
+.courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .education-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .education .subtitle {
+    color: #fff;
+  }
+  .education-text {
+    font-size: 1.25rem;
+  }
+  .education-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
