@@ -11,7 +11,7 @@
 
 <body>
   <form action="./">
-    <div>
+    <!-- <div>
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name">
     </div>
@@ -59,7 +59,17 @@
     <div class="radio">
       <input type="radio" id="delivery" name="method">
       <label for="delivery">Delivery</label>
-    </div>
+    </div> -->
+
+    <label for="parcels"></label>
+    <select name="parcels" id="parcels">
+      <option value="1x">1x €200</option>
+      <option value="2x">2x €100</option>
+      <option value="4x">4x €50</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="5"></textarea>
 
     <button>Enviar</button>
   </form>
