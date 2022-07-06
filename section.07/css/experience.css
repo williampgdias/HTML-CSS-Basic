@@ -35,7 +35,7 @@
 }
 
 .company::before {
-  content: "";
+  content: '';
   display: block;
   width: 4px;
   height: 20px;
@@ -50,7 +50,7 @@
   top: 22px;
   left: -100px;
   color: #525252;
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-align: right;
   width: 80px;
 }
@@ -62,7 +62,7 @@
 }
 
 .company-text {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #525252;
   line-height: 1.4;
 }
@@ -80,4 +80,32 @@
   border-radius: 4px;
   background: #fff;
   padding: 5px 10px;
+}
+
+@media (max-width: 800px) {
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experience .subtitle {
+    color: #141414;
+  }
+  .experience-text {
+    font-size: 1.25rem;
+  }
+  .company-year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .company-year::before {
+    content: 'Year: ';
+  }
+}
+
+@media (max-width: 800px) {
+  .company {
+    grid-template-columns: 1fr;
+  }
 }
