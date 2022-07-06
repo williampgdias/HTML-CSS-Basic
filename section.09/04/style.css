@@ -1,0 +1,34 @@
+:root {
+  --bg: #fff;
+  --text-1: #111;
+  --text-2: #444;
+
+  /* --roxo: #84e;
+--border: 4px solid blue;
+--font-l: 3rem; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #222;
+    --text-1: #eee;
+    --text-2: #bbb;
+
+    /* --roxo: #84e;
+  --border: 4px solid blue;
+  --font-l: 3rem; */
+  }
+}
+
+body {
+  background: var(--bg);
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: var(--text-1);
+}
+
+p {
+  color: var(--text-2);
+}
