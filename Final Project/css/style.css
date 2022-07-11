@@ -11,3 +11,6 @@
 
 /********** COMPONENTS **********/
 @import './utility/components.css';
+
+/********** BIKES **********/
+@import './bikes/bikes-list.css';
