@@ -1,22 +1,21 @@
+/********** FONTS **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+
 /********** GLOBAL **********/
 @import './global/global.css';
+@import './global/header.css';
+
+/********** UTILITY **********/
 @import './utility/typography.css';
 @import './utility/colors.css';
-
-/********** HEADER **********/
-@import './global/header.css';
+@import './utility/components.css';
 
 /********** HOME **********/
 @import './home/intro.css';
-
-/********** COMPONENTS **********/
-@import './utility/components.css';
+@import './home/technology.css';
+@import './home/partners.css';
+@import './home/testimony.css';
 
 /********** BIKES **********/
 @import './bikes/bikes-list.css';
-
-/********** TECHNOLOGY **********/
-@import './home/technology.css';
-
-/********** PARTNERS **********/
-@import './home/partners.css';
