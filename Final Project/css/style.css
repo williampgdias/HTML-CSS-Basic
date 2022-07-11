@@ -19,3 +19,6 @@
 
 /********** BIKES **********/
 @import './bikes/bikes-list.css';
+
+/********** INSURANCE **********/
+@import './insurance/insurance.css';
