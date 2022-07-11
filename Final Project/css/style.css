@@ -14,3 +14,6 @@
 
 /********** BIKES **********/
 @import './bikes/bikes-list.css';
+
+/********** TECHNOLOGY **********/
+@import './home/technology.css';
