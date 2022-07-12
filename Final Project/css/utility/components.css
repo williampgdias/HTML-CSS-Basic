@@ -58,3 +58,24 @@
     font-size: 1rem;
   }
 }
+
+/******************** INTERNAL TITLE ********************/
+.title-bg {
+  background-color: var(--color-11);
+  padding: 60px 0;
+}
+
+.title p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding: 40px 0;
+  }
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+}
