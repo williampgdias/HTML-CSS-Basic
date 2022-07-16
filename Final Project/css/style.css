@@ -24,6 +24,8 @@
 
 /********** INSURANCE **********/
 @import './insurance/insurance.css';
+@import './insurance/benefits.css';
+@import './insurance/questions.css';
 
 /********** TERMS **********/
 @import './terms/terms.css';
