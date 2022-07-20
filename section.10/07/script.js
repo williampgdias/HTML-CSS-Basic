@@ -45,8 +45,17 @@
 
 //////////////////// SCROLL ////////////////////
 
-function scroll() {
-  console.log(window.scrollY);
+// function scroll() {
+//   console.log(window.scrollY);
+// }
+
+// window.addEventListener('scroll', scroll);
+
+const circulo = document.querySelector('#circulo');
+
+function seguirMouse(event) {
+  circulo.style.top = event.y + 'px';
+  circulo.style.left = event.x + 'px';
 }
 
-window.addEventListener('scroll', scroll);
+window.addEventListener('mousemove', seguirMouse);
