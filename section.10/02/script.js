@@ -5,7 +5,7 @@ console.log(nav);
 console.log(products);
 console.log(products.href);
 
-console.log(nav.dir);
+console.dir(nav);
 
 nav.style.backgroundColor = 'black';
 nav.style.padding = '1rem';
