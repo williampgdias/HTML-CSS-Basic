@@ -1,22 +1,19 @@
-// function livro(nome, ano, autor) {
-//   const nomeMaior = nome.toUpperCase();
-//   const totalAnos = 2050 - ano;
-//   const frase = nome + ' por ' + autor;
-//   const objeto = {
-//     nome: nomeMaior,
-//     totalAnos,
-//     frase,
-//   };
-//   return objeto;
-// }
+// const curso = {
+//   nome: 'JavaScript',
+//   completar() {
+//     console.log('curso Completo');
+//   },
+// };
 
-function livro(nome, ano, autor) {
-  return {
-    nome: nome.toUpperCase(),
-    ano: 2050 - ano,
-    frase: nome + ' por ' + autor,
-  };
+// console.log(curso.nome);
+// curso.completar();
+
+const ativar = document.querySelector('.ativar');
+
+function handleClick(event) {
+  console.log(event);
 }
 
-const livroRetorno = livro('O Senhor dos Anéis', 1954, 'J. R. R. Tolkien');
-console.log(livroRetorno.frase);
+ativar.addEventListener('click', handleClick);
+
+console.log(ativar);
